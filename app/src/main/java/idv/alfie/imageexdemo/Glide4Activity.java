@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
+import static idv.alfie.imageexdemo.MainActivity.HTTPERROR;
 import static idv.alfie.imageexdemo.MainActivity.HTTPGIF;
 import static idv.alfie.imageexdemo.MainActivity.HTTPJPG;
 import static idv.alfie.imageexdemo.MainActivity.HTTPPNG;
@@ -26,15 +27,18 @@ public class Glide4Activity extends AppCompatActivity {
         setContentView(R.layout.activity_glide4);
 
         imageView = (ImageView)findViewById(R.id.imageView);
-        options = new RequestOptions().placeholder(R.mipmap.ic_launcher_round); //佔位圖
+        options = new RequestOptions()
+                .placeholder(R.mipmap.ic_launcher_round) //佔位圖
+                .error(R.mipmap.ic_launcher) //404圖片
+                .fallback(R.drawable.ic_launcher_foreground); //載入失敗
     }
 
     @Override
     protected void onStart() {
         //載入圖片
         Glide.with(getApplicationContext())
-                .load(HTTPSGIF)
-                //.apply(options)
+                .load(HTTPERROR)
+                .apply(options)
                 .into(imageView);
 
         super.onStart();

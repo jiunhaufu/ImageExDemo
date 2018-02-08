@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String HTTPGIF ="http://img.idol001.com/origin/2017/08/27/25b280d5c31abdef55da40ab580a5bce1503816000.gif";
     public static final String HTTPPNG ="http://wfarm3.dataknet.com/static/resources/icons/set112/f2afb6f7.png";
     public static final String HTTPSSVG ="https://image.flaticon.com/icons/svg/337/337954.svg"; //glide4不支援
+    public static final String HTTPERROR = "http://wfarm3.dataknet.com/static/resources/icons/set112/f2fb6f7.png";
 
 
     @Override
