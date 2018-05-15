@@ -37,7 +37,7 @@ public class Glide4Activity extends AppCompatActivity {
     protected void onStart() {
         //載入圖片
         Glide.with(getApplicationContext())
-                .load(HTTPERROR)
+                .load(HTTPSSJPG)
                 .apply(options)
                 .into(imageView);
 

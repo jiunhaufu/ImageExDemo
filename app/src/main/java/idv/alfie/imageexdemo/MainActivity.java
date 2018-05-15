@@ -9,7 +9,7 @@ public class MainActivity extends AppCompatActivity {
 
     //載入網路圖片連結
     public static final String HTTPSJPG = "https://i.ytimg.com/vi/FJOe9EKeAK8/maxresdefault.jpg";
-    public static final String HTTPSSJPG = "https://glcp.toplogis.com/part_img/TT201706-000963-s.jpg"; //自簽憑證
+    public static final String HTTPSSJPG = "https://glcp.toplogis.com/part_img/TT201706-000963-s.jpg"; //自簽憑證，停止服務已無法使用
     public static final String HTTPJPG = "http://img.ltn.com.tw/Upload/ent/page/800/2017/10/20/phpUGp63B.jpg";
     public static final  String HTTPSGIF = "https://upload.cc/i/ChiJ8Y.gif";
     public static final String HTTPGIF ="http://img.idol001.com/origin/2017/08/27/25b280d5c31abdef55da40ab580a5bce1503816000.gif";
